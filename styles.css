@@ -174,7 +174,7 @@ footer {
     body{
         overflow-x: hidden;
     }
-    
+
     .nav-links {
         position: absolute;
         right: 0px;
@@ -218,9 +218,16 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+
+
     .service-card {
         flex: 1 1 100%;
     }
+
+
 }
 
 /* About Page */
