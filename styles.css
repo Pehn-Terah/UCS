@@ -216,13 +216,15 @@ footer {
         position: fixed; /* Changed from absolute to fixed */
         right: 0;
         top: 0; /* Adjust to full height */
+        margin-top: 15px;
         height: 100vh;
-        width: 50%;
+        width: 35%;
         background-color: #e3a026;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        row-gap: 25px;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 1000; /* High z-index to ensure it's on top */
@@ -234,6 +236,8 @@ footer {
     }
 
     .burger {
+        display: block;
+        cursor: pointer;
         z-index: 1001; /* Ensure burger is above menu */
         position: relative;
     }
