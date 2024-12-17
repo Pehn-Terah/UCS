@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
 
+        document.body.style.overflow = nav.classList.contains('nav-active') 
+        ? 'hidden' 
+        : 'auto';
+
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
