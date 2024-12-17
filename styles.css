@@ -328,6 +328,7 @@ footer {
 .contact-form,
 .contact-info {
     flex: 1 1 300px;
+    padding: 25px;
 }
 
 .contact-form form {
