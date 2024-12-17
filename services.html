@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="./UDARA LOGO PNG/UDARA MAIN LOGO PNG.png" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="services-page">
+        <h1>Our Services</h1>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="https://via.placeholder.com/150" alt="Service 1">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                <button class="service-button" data-service="1">Learn More</button>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/150" alt="Service 2">
+                <h3>Service 2</h3>
+                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus.</p>
+                <button class="service-button" data-service="2">Learn More</button>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/150" alt="Service 3">
+                <h3>Service 3</h3>
+                <p>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
+                <button class="service-button" data-service="3">Learn More</button>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/150" alt="Service 4">
+                <h3>Service 4</h3>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+                <button class="service-button" data-service="4">Learn More</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <h2 id="popup-title"></h2>
+            <p id="popup-description"></p>
+            <button id="popup-close">Close</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
