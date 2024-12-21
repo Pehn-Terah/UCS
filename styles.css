@@ -269,6 +269,7 @@ footer {
         width: 100vw; /* Ensure the video covers the full width */
         height: auto; /* Allow height to adjust automatically */
         min-height: 100%; /* Ensure the video covers the full height */
+        object-fit: cover;
     }
 
     .about-content {
