@@ -61,7 +61,7 @@ nav {
 
 
 /* Hero Section */
-.hero {
+/* .hero {
     background-color: #f4f4f4;
     text-align: center;
     padding: 4rem 2rem;
@@ -70,6 +70,25 @@ nav {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+} */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 60vh; /* Set the height of the hero section */
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw; /* Set width to 100% of the viewport width */
+    height: auto; /* Allow height to adjust automatically */
+    min-height: 100%; /* Ensure the video covers the full height */
+    z-index: -1; /* Ensure the video is behind other content */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: fill; /* Ensures the video fills the area without cropping */
 }
 
 .cta-button {
@@ -240,6 +259,16 @@ footer {
         cursor: pointer;
         z-index: 1001; /* Ensure burger is above menu */
         position: relative;
+    }
+
+    .hero {
+        height: 60vh; /* Keep the height full on smaller screens */
+    }
+
+    .background-video {
+        width: 100vw; /* Ensure the video covers the full width */
+        height: auto; /* Allow height to adjust automatically */
+        min-height: 100%; /* Ensure the video covers the full height */
     }
 
     .about-content {
