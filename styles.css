@@ -189,7 +189,9 @@ footer {
 }
 
 .social-media {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    border-top: 1px solid #efefef;
+
 }
 
 .social-media a {
