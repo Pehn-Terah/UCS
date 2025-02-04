@@ -339,6 +339,11 @@ footer {
     .contact-content {
         flex-direction: column;
     }
+
+    .pad{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
