@@ -155,6 +155,20 @@ nav {
     height: auto;
 }
 
+.justify-text {
+    text-align: justify;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.pad{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+}
+
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
