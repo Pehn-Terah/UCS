@@ -106,14 +106,14 @@
 
     <section id="contact" class="contact">
       <h2>Contact Us</h2>
-      <form action="https://formsubmit.co/udaracreativestudio@gmail.com" method="POST">
-        <!-- Add a redirect or disable captcha -->
-  <input type="hidden" name="_next" value="https://pehn-terah.github.io/UCS/index.html">
-  <input type="hidden" name="_captcha" value="false">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <form id="custom-form">
+  <!-- <input type="hidden" name="_captcha" value="false"> -->
+        <input type="text" name="entry.836569547" placeholder="Your Name" required />
+        <input type="email" name="entry.142676353" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" name="entry.1948233718" required></textarea>
+        <button type="submit" >Send Message</button>
+
+        <input type="text" name="ignore-this" style="display: none;">
       </form>
     </section>
 
@@ -129,6 +129,33 @@
 
         <button id="back-to-top" title="Back to Top">&#8679;</button>
 
+
+
+
+    <script>
+      const form = document.getElementById("custom-form");
+    const formUrl = "https://forms.gle/pZrwBTubXPPmUvW18";
+
+    form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  
+  const formData = new FormData(form);
+  const urlEncoded = new URLSearchParams(formData).toString();
+
+  try {
+    await fetch(formUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: urlEncoded,
+      mode: "no-cors",
+    });
+    alert("Message sent! 🎉");
+    form.reset();
+  } catch (error) {
+    alert("Error sending message.");
+  }
+    });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
