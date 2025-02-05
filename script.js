@@ -109,7 +109,7 @@ backToTopButton.onclick = function() {
 
 // Form submission
       const form = document.getElementById("custom-form");
-    const formUrl = "https://forms.gle/pZrwBTubXPPmUvW18";
+    const formUrl = "https://forms.gle/pZrwBTubXPPmUvW18/formResponse";
 
     form.addEventListener("submit", async (e) => {
   e.preventDefault();
