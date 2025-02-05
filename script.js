@@ -106,3 +106,27 @@ backToTopButton.onclick = function() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top for Brave
 };
+
+// Form submission
+      const form = document.getElementById("custom-form");
+    const formUrl = "https://forms.gle/pZrwBTubXPPmUvW18";
+
+    form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  
+  const formData = new FormData(form);
+  const urlEncoded = new URLSearchParams(formData).toString();
+
+  try {
+    await fetch(formUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: urlEncoded,
+      mode: "no-cors",
+    });
+    alert("Message sent! 🎉");
+    form.reset();
+  } catch (error) {
+    alert("Error sending message.");
+  }
+    });
